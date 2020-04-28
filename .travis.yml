@@ -12,6 +12,6 @@ after_success:
   - docker build -t lucalmeida/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push lucalmeida/multi-client
-  - docker push lucameida/multi-nginx
-  - docker push lucameida/multi-server
-  - docker push lucameida/multi-worker
+  - docker push lucalmeida/multi-nginx
+  - docker push lucalmeida/multi-server
+  - docker push lucalmeida/multi-worker
